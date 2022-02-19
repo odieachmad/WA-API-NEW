@@ -83,7 +83,7 @@ app.get('/api/v1/otp/:phone/send', async (req, res) => {
     return res.status(400).json({ error: "Nomor tidak terdaftar di whatsapp!" })
   }
 
-  return res.status(200).json({ fialed: 'Message send success!' })
+  return res.status(200).json({ success: 'Message send success!' })
 })
 
 // Routes
